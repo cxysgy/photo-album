@@ -1,0 +1,17 @@
+*{margin: 0;padding: 0;}
+body{background:#000;overflow:hidden;}
+#perspective{perspective:800px;/*景深  视角*/}
+#wrap{
+	position:relative;
+	width: 133px;
+	height: 200px;
+	margin:150px auto;
+	transform-style:preserve-3d;/*3d*/
+	transform:rotateX(-10deg);/*空间位置*/
+	/* border:1px solid red; */
+}
+#wrap img{
+	position:absolute;
+	top:0;
+	-webkit-box-reflect:below 5px -webkit-linear-gradient(top ,rgba(0,0,0,0) 40%,rgba(0,0,0,0.5) 100%);/*倒影位置 与 本体的距离*/
+}
